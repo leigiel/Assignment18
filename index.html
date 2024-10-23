@@ -4,94 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment18</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <style>
-        .header, .nav, .main, .first-aside, .second-aside, .footer{
-            border: 1px solid green;
-            background-color: pink;
-            padding: 30px;
-        }
-        ul>li{
-            list-style: none;
-        }
-        .container{
-            display: grid;
-            grid-template-areas:
-            "header header header header"
-            "nav main main first-aside"
-            "nav main main second-aside"
-            "footer footer footer footer"
-            ;
-        }
-        .header{
-            grid-area: header;
-        }
-        .nav{
-            grid-area: nav;
-        }
-        .main{
-            grid-area: main;
-        }
-        .first-aside{
-            grid-area: first-aside;
-        }
-        .second-aside{
-            grid-area: second-aside;
-        }
-        .footer{
-            grid-area: footer;
-        }
-    </style>
-  </head>
-  <body>
-   <section class="container">
-    <header class="header">
-        <h1>This is Header</h1>
+<body class="p-4 bg-green-200 border border-green-500">
+  <section class="grid grid-cols-4 gap-4 grid-areas h-[100vh] ">
+      <header class="flex flex-col items-center justify-center header col-span-4 bg-pink-200 border border-green-500 p-8">
+          <h1>Hello, I am Nasif. This is my Assignment-18</h1>
       </header>
-      <nav class="nav">
-        <ul>
-          <li>Home</li>
-          <li>Login</li>
-          <li>Calculator</li>
-          <li>bank</li>
-        </ul>
+      <nav class="flex flex-col items-center justify-center nav col-span-4 row-span-2 bg-pink-200 justify-items-center border border-green-500 p-8">
+        <h3 class="text-rose-900 underline text-xl">Pages</h3><br><br>
+        <ul class="list-none">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./login.html">Login</a></li>
+              <li><a href="./calculator.html">Calculator</a></li>
+          </ul>
       </nav>
-      <main class="main">
-        <article>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          cumque dolore a minima rerum, quos non earum libero facere illo, unde
-          iusto rem, suscipit magnam. Cumque maiores sunt sit hic, voluptatem ea
-          laboriosam quo quaerat libero culpa nam quibusdam deserunt tempore quae
-          blanditiis alias nemo beatae sint adipisci dolorum molestiae voluptates.
-          Quisquam, sapiente voluptate. Ad a impedit aspernatur nulla suscipit
-          dolorum tempora repellat, consectetur nostrum labore blanditiis,
-          recusandae nam nobis quod at error similique accusamus? Facilis earum
-          maiores aperiam eius, minus ad esse quis, quam culpa eligendi alias
-          expedita. Quis dolor quod laborum consectetur animi maiores magni nobis
-          voluptate qui.
-        </article>
-        <article>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero sunt sit,
-          fugiat, recusandae ullam, repellat illo magnam provident ipsam odio
-          error veritatis nulla voluptatibus ea omnis eum temporibus quam ut nam
-          obcaecati. Modi, quae non delectus debitis quisquam cupiditate fugiat,
-          inventore officiis distinctio voluptate autem dicta eligendi obcaecati,
-          maxime dolore nulla explicabo ipsam amet nesciunt! Maxime iusto unde sed
-          expedita iste atque tenetur beatae cupiditate possimus necessitatibus
-          temporibus sint voluptates voluptatum earum impedit autem, adipisci
-          deserunt quam quasi quidem vitae natus consequatur architecto commodi.
-          Inventore, deleniti commodi suscipit corporis nisi modi a eius iusto
-          rerum, quas accusantium odio fugiat. Voluptate.
-        </article>
-      </main>
-      <aside>
-        <div class="first-aside">First Aside</div>
-        <div class="second-aside">Second Aside</div>
-      </aside>
-      <footer class="footer">
-        <h1>This is Footer</h1>
+
+      <footer class="flex flex-col items-center justify-center footer col-span-4 bg-pink-200 justify-items-center border border-green-500 p-8">
+          <h1>Thank You</h1>
       </footer>
-   </section>
+  </section>
+
 </body>
 </html>
